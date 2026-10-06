@@ -5,6 +5,7 @@ const { testDatabaseConnection } = require("./config/db");
 
 const PORT = process.env.PORT || 8003;
 
+
 const startServer = async () => {
     await testDatabaseConnection();
 

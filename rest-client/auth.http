@@ -3,7 +3,7 @@ POST http://localhost:8003/api/auth/login
 Content-Type: application/json
 
 {
-    "email": "ck933970@gmail.com",
+    "email": "ck9339701@gmail.com",
     "password": "chandan"
 }
 
@@ -34,3 +34,6 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjIsInJvb
 ### Get admin test
 http://localhost:8003/api/auth/admin-test
 Authorization:  Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsInJvbGVJZCI6MSwicm9sZU5hbWUiOiJBRE1JTiIsImlhdCI6MTc5MTE5MzIxNiwiZXhwIjoxNzkxMjc5NjE2fQ.h0eXUl6xytg2e4YiH0xqJevHmxudihSagwu-LhPXwoM
+
+### helmet test
+GET http://localhost:8003/test

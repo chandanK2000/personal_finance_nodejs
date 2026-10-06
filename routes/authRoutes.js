@@ -1,14 +1,13 @@
 const express = require("express");
 const { register, login } = require("../controllers/authController");
 const {authenticateToken} = require("../middleware/authMiddleware");
-
 const {authorizeRoles} = require("../middleware/roleMiddleware");
-
+const { loginLimiter } = require("../middleware/rateLimitMiddleware");
 
 const router = express.Router();
 
 router.post("/register", register);
-router.post("/login", login);
+router.post("/login", loginLimiter,login);
 
 
 router.get(
