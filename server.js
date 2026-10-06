@@ -14,3 +14,6 @@ const startServer = async () => {
 };
 
 startServer();
+
+
+// mysqldump -u root -p --no-data personalfinancedb > database\personalfinancedb.sql to make backup for the schema
